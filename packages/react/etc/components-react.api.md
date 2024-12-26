@@ -4,39 +4,53 @@
 
 ```ts
 
-import type { AudioAnalyserOptions } from 'livekit-client';
-import type { AudioCaptureOptions } from 'livekit-client';
+import { AudioAnalyserOptions } from 'livekit-client';
+import { AudioCaptureOptions } from 'livekit-client';
 import { ChatMessage } from 'livekit-client';
 import { ConnectionQuality } from 'livekit-client';
 import { ConnectionState as ConnectionState_2 } from 'livekit-client';
-import type { CreateLocalTracksOptions } from 'livekit-client';
-import type { DataPublishOptions } from 'livekit-client';
-import type { HTMLAttributes } from 'react';
+import { CreateLocalTracksOptions } from 'livekit-client';
+import { DataPublishOptions } from 'livekit-client';
+import { DisconnectReason } from 'livekit-client';
+import { HTMLAttributes } from 'react';
+import { KrispNoiseFilterProcessor } from '@livekit/krisp-noise-filter';
 import { LocalAudioTrack } from 'livekit-client';
 import { LocalParticipant } from 'livekit-client';
-import type { LocalTrack } from 'livekit-client';
+import { LocalTrack } from 'livekit-client';
 import { LocalTrackPublication } from 'livekit-client';
 import { LocalVideoTrack } from 'livekit-client';
-import type { MediaDeviceFailure } from 'livekit-client';
+import { MediaDeviceFailure } from 'livekit-client';
+import { NoiseFilterOptions } from '@livekit/krisp-noise-filter';
 import { Participant } from 'livekit-client';
-import type { ParticipantEvent } from 'livekit-client';
+import { ParticipantEvent } from 'livekit-client';
+import type { ParticipantKind } from 'livekit-client';
+import { ParticipantPermission } from '@livekit/protocol';
+import * as React_2 from 'react';
+import { RemoteAudioTrack } from 'livekit-client';
 import { RemoteParticipant } from 'livekit-client';
-import type { RoomConnectOptions } from 'livekit-client';
-import type { RoomEvent } from 'livekit-client';
-import type { RoomOptions } from 'livekit-client';
-import type { ScreenShareCaptureOptions } from 'livekit-client';
+import { Room } from 'livekit-client';
+import { RoomConnectOptions } from 'livekit-client';
+import { RoomEvent } from 'livekit-client';
+import { RoomOptions } from 'livekit-client';
+import { ScreenShareCaptureOptions } from 'livekit-client';
 import { setLogLevel as setLogLevel_2 } from 'livekit-client';
-import type { SVGProps } from 'react';
+import { SVGProps } from 'react';
 import { Track } from 'livekit-client';
-import type { TrackPublication } from 'livekit-client';
+import { TrackProcessor } from 'livekit-client';
+import { TrackPublication } from 'livekit-client';
 import { TrackPublishOptions } from 'livekit-client';
-import type { TranscriptionSegment } from 'livekit-client';
-import type { VideoCaptureOptions } from 'livekit-client';
+import { TranscriptionSegment } from 'livekit-client';
+import { VideoCaptureOptions } from 'livekit-client';
 
 // @beta (undocumented)
 export type AgentState = 'disconnected' | 'connecting' | 'initializing' | 'listening' | 'thinking' | 'speaking';
 
+// @public (undocumented)
+export interface AllowAudioPlaybackProps extends React_2.ButtonHTMLAttributes<HTMLButtonElement> {
+    // (undocumented)
+    label: string;
 }
+
 // @public (undocumented)
 export interface AllowMediaPlaybackProps extends React_2.ButtonHTMLAttributes<HTMLButtonElement> {
     // (undocumented)

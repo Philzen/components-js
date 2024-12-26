@@ -3,7 +3,7 @@ import { LocalAudioTrack } from 'livekit-client';
 import { log } from '@livekit/components-core';
 import type { KrispNoiseFilterProcessor, NoiseFilterOptions } from '@livekit/krisp-noise-filter';
 import type { TrackReferenceOrPlaceholder } from '@livekit/components-core';
-import { useLocalParticipant } from '../../useLocalParticipant';
+import { useLocalParticipant } from '../../..';
 
 /**
  * @beta
