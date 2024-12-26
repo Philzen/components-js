@@ -8,7 +8,12 @@ module.exports = {
     '@storybook/addon-interactions',
   ],
   core: {
-    builder: '@storybook/builder-vite', // 👈 The builder enabled here.
+    builder: {
+      name: '@storybook/builder-vite',
+      options: {
+        viteConfigPath: '../../packages/react/vite.config.js',
+      },
+    }
   },
   framework: {
     name: '@storybook/react-vite',
