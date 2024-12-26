@@ -5,7 +5,7 @@
   "author": "LiveKit",
   "repository": {
     "type": "git",
-    "url": "https://github.com/livekit/components-js.git",
+    "url": "git+https://github.com/livekit/components-js.git",
     "directory": "/packages/react"
   },
   "exports": {
