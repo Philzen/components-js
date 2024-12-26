@@ -23,4 +23,4 @@ export {
   useTrackRefContext,
 } from './track-reference-context';
 
-export { type FeatureFlags, useFeatureContext, LKFeatureContext } from './feature-context';
+export { FeatureFlags, useFeatureContext, LKFeatureContext } from './feature-context';
