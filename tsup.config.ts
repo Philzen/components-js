@@ -5,8 +5,7 @@ const defaultOptions: Options = {
   format: ['cjs', 'esm'],
   splitting: false,
   sourcemap: true,
-  // for the type maps to work, we use tsc's declaration-only command
-  dts: false,
+  dts: true,
   clean: true,
   target: 'es6',
   esbuildOptions: (options, context) => {
